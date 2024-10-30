@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - Iara Games</title>
+    <link rel="icon" type="image/png" href="../img/icone.png">
+    <link rel="stylesheet" href="../css/biblioteca.css"> 
+</head>
+<body>
+
+    <button class="voltar" onclick="goBack()">Voltar</button> 
+
+    <div class="container">
+        <h1>Biblioteca de Jogos</h1>
+        <p>Aqui você pode visualizar todos os jogos adquiridos na Iara Games. Use os botões abaixo para ordenar a sua biblioteca.</p>
+
+       
+        <div class="actions">
+            <button class="button" onclick="sortByDate()">Ordenar por Data de Compra</button>
+            <button class="button" onclick="sortAlphabetically()">Ordenar por Ordem Alfabética</button>
+            <button class="button" onclick="sortByRating()">Ordenar por Nota</button>
+        </div>
+
+        <!-- Lista de Jogos -->
+        <ul class="game-list">
+            
+            <li class="game-item" data-date="2024-09-12" data-name="Horizon Chase" data-rating="4.5">
+                <img src="../img/HorizonChase.jpg" alt="Horizon Chase" class="game-image">
+                <div class="game-info">
+                    <strong>Horizon Chase</strong> - Nota: 4.5 - Comprado em: 12/09/2024
+                </div>
+            </li>
+            <li class="game-item" data-date="2024-08-15" data-name="Pãozito" data-rating="3.8">
+                <img src="../img/paozito.webp" alt="Pãozito" class="game-image">
+                <div class="game-info">
+                    <strong>Pãozito</strong> - Nota: 3.8 - Comprado em: 15/08/2024
+                </div>
+            </li>
+            <li class="game-item" data-date="2024-07-10" data-name="Dandara" data-rating="5.0">
+                <img src="../img/Dandara.jpg" alt="Dandara" class="game-image">
+                <div class="game-info">
+                    <strong>Dandara</strong> - Nota: 5.0 - Comprado em: 10/07/2024
+                </div>
+            </li>
+            <li class="game-item" data-date="2024-08-15" data-name="relic" data-rating="4.5">
+                <img src="../img/relic.jpg" alt="Relic" class="game-image">
+                <div class="game-info">
+                    <strong>Relic Hunters Legend</strong> - Nota: 4.5 - Comprado em: 15/08/2024
+                </div>
+            </li>
+            <li class="game-item" data-date="2024-07-20" data-name="tetragon" data-rating="6.8">
+            <img src="../img/tetragon.jpg" alt="Tetragon" class="game-image">
+            <div class="game-info">
+                <strong>Tetragon Puzzle Game</strong> - Nota: 6.8 - Comprado em: 20/07/2024
+            </div>
+        </li>
+            <li class="game-item" data-date="2024-09-20" data-name="A lenda do herói" data-rating="6.0">
+                <img src="../img/a lenda.jpeg" alt="A lenda do herói" class="game-image">
+                <div class="game-info">
+                    <strong>A lenda do herói</strong> - Nota: 6.0 - Comprado em: 20/09/2024
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="../java/biblioteca.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Iara Games</title>
+    <link rel="icon" type="image/png" href="../img/icone.png">
+    <link rel="stylesheet" href="../css/carrinho.css">
+</head>
+<body>
+
+    <header>
+        <button class="back-button" onclick="goBack()">Voltar</button>
+        <h1>Carrinho de Compras</h1>
+    </header>
+
+    <div class="container">
+        <!-- Botão Voltar -->
+        <button class="back-button" onclick="goBack()">Voltar</button>
+
+        <h2>Jogos no Seu Carrinho</h2>
+        <ul class="cart-list">
+            <li class="cart-item" data-name="Horizon Chase Turbo" data-price="39.99">
+                <img src="../img/HorizonChase.jpg" alt="Horizon Chase Turbo" class="cart-image">
+                <div class="cart-info">
+                    <h3>Horizon Chase Turbo</h3>
+                    <p>Preço: R$ 39,99</p>
+                </div>
+                <button class="remove-button" onclick="removeItem(this)">Remover</button>
+            </li>
+            <li class="cart-item" data-name="Dandara" data-price="29.99">
+                <img src="../img/Dandara.jpg" alt="Dandara" class="cart-image">
+                <div class="cart-info">
+                    <h3>Dandara</h3>
+                    <p>Preço: R$ 29,99</p>
+                </div>
+                <button class="remove-button" onclick="removeItem(this)">Remover</button>
+            </li>
+            <li class="cart-item" data-name="Relic Hunters Legend" data-price="41.50">
+                <img src="../img/relic.jpg" alt="Relic Hunters Legend" class="cart-image">
+                <div class="cart-info">
+                    <h3>Relic Hunters Legend</h3>
+                    <p>Preço: R$ 41,50</p>
+                </div>
+                <button class="remove-button" onclick="removeItem(this)">Remover</button>
+            </li>
+        </ul>
+        <div class="total">
+            <h3>Total: R$ <span id="totalPrice">0.00</span></h3>
+        </div>
+        <button class="button checkout-button" onclick="checkout()">Finalizar Compra</button>
+    </div>
+
+    <script src="../java/carrinho.js"></script> 
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Jogos - Iara Games</title>
+    <link rel="icon" type="image/png" href="../img/icone.png">
+    <link rel="stylesheet" href="../css/loja.css"> 
+</head>
+<body>
+
+    <header>
+        <button class="back-button" onclick="goBack()">Voltar</button>
+        <h1>Loja de Jogos - Iara Games</h1>
+        <p>Explore e ordene os jogos da nossa loja conforme suas preferências!</p>
+    </header>
+
+    <!-- Botões de Ordenação -->
+    <div class="actions">
+        <button class="button" onclick="sortAlphabetically()">Ordem Alfabética</button>
+        <button class="button" onclick="sortByPopularity()">Mais Comprados</button>
+        <button class="button" onclick="sortByRating()">Maior Avaliação</button>
+        <button class="button" onclick="sortByCategory()">Categoria</button>
+        <button class="button" onclick="sortByGenre()">Gênero</button>
+    </div>
+
+    <!-- Lista de Jogos -->
+    <div class="game-list">
+        
+        <div class="game-item" data-name="Horizon Chase" data-popularity="1500" data-rating="4.5" data-category="Corrida" data-genre="Arcade">
+            <img src="../img/HorizonChase.jpg" alt="Capa Horizon Chase">
+            <div class="game-info">
+                <h3>Horizon Chase</h3>
+                <p>Avaliação: 4.5</p>
+                <p>Categoria: Corrida</p>
+                <p>Gênero: Arcade</p>
+                <p>Compras: 500</p>
+            </div>
+        </div>
+        <div class="game-item" data-name="Pãozito" data-popularity="200" data-rating="3.8" data-category="Puzzle" data-genre="Casual">
+            <img src="../img/paozito.webp" alt="Capa Pãozito">
+            <div class="game-info">
+                <h3>Pãozito</h3>
+                <p>Avaliação: 3.8</p>
+                <p>Categoria: Puzzle</p>
+                <p>Gênero: Casual</p>
+                <p>Compras: 200</p>
+            </div>
+        </div>
+        <div class="game-item" data-name="A lenda" data-popularity="1200" data-rating="6.0" data-category="Ação" data-genre="eletrônico">
+            <img src="../img/a lenda.jpeg" alt="Capa lenda">
+            <div class="game-info">
+                <h3>A lenda do herói</h3>
+                <p>Avaliação: 6.0</p>
+                <p>Categoria: Ação</p>
+                <p>Gênero: Eletrônico</p>
+                <p>Compras: 1200</p>
+            </div>
+        </div>
+        <div class="game-item" data-name="Blazing" data-popularity="150" data-rating="3.8" data-category="Ação" data-genre="eletrônico">
+            <img src="../img/Blazing.jpg" alt="Capa Blazing">
+            <div class="game-info">
+                <h3>Blazing Chrome</h3>
+                <p>Avaliação: 3.8</p>
+                <p>Categoria: Ação</p>
+                <p>Gênero: Eletrônico</p>
+                <p>Compras: 150</p>
+            </div>
+        </div>
+        <div class="game-item" data-name="Dandara" data-popularity="2" data-rating="5.0" data-category="Aventura" data-genre="M">
+            <img src="../img/Dandara.jpg" alt="Capa Dandara">
+            <div class="game-info">
+                <h3>Dandara</h3>
+                <p>Avaliação: 5.0</p>
+                <p>Categoria: Aventura</p>
+                <p>Gênero: Metroidvania</p>
+                <p>Compras: 2</p>
+            </div>
+        </div>
+        <div class="game-item" data-name="Chroma" data-popularity="550" data-rating="7.5" data-category="Ação" data-genre="RPG eletrônico de estratégia">
+            <img src="../img/Chroma Squad.jpg" alt="Capa Chroma">
+            <div class="game-info">
+                <h3>Chroma Squad</h3>
+                <p>Avaliação: 7.5</p>
+                <p>Categoria: Ação</p>
+                <p>Gênero: RPG eletrônico de estratégia </p>
+                <p>Compras: 550</p>
+            </div>
+        </div>
+        <div class="game-item" data-name="Fobia" data-popularity="7000" data-rating="6.5" data-category="terror" data-genre="Eletrônico">
+            <img src="../img/Fobia.jpg" alt="Capa Fobia">
+            <div class="game-info">
+                <h3>Fobia – St. Dinfna Hotel</h3>
+                <p>Avaliação: 6.5</p>
+                <p>Categoria: Terror</p>
+                <p>Gênero: Eletrônico </p>
+                <p>Compras: 7000</p>
+            </div>
+        </div>
+        <div class="game-item" data-name="Hazel" data-popularity="700" data-rating="8.0" data-category="aventura" data-genre="Eletrônico de aventura">
+            <img src="../img/Hazel.jpg" alt="Capa Hazel">
+            <div class="game-info">
+                <h3>Hazel sky</h3>
+                <p>Avaliação: 8.0</p>
+                <p>Categoria: Aventura</p>
+                <p>Gênero: Eletrônico </p>
+                <p>Compras: 700</p>
+            </div>
+        </div>
+        <div class="game-item" data-name="Relic" data-popularity="90" data-rating="4.5" data-category="aventura" data-genre="Eletrônico de aventura">
+            <img src="../img/relic.jpg" alt="Capa Relic">
+            <div class="game-info">
+                <h3>Relic Hunters Legend</h3>
+                <p>Avaliação: 4.5</p>
+                <p>Categoria: Aventura</p>
+                <p>Gênero: Eletrônico </p>
+                <p>Compras: 90</p>
+            </div>
+        </div>
+
+        <div class="game-item" data-name="Tetragon" data-popularity="5000" data-rating="6.8" data-category="indie" data-genre="casual">
+            <img src="../img/tetragon.jpg" alt="Capa tetragon">
+            <div class="game-info">
+                <h3>Tetragon Puzzle Game</h3>
+                <p>Avaliação: 6.8</p>
+                <p>Categoria: Indie</p>
+                <p>Gênero: casual </p>
+                <p>Compras: 5000</p>
+            </div>
+        </div>
+
+        <div class="game-item" data-name="Out" data-popularity="800" data-rating="5.8" data-category="ação" data-genre="estratégia">
+            <img src="../img/out.jpg" alt="Capa out">
+            <div class="game-info">
+                <h3>Out of Space</h3>
+                <p>Avaliação: 5.8</p>
+                <p>Categoria: Ação</p>
+                <p>Gênero: Estratégia/Ação </p>
+                <p>Compras: 800</p>
+            </div>
+        </div>
+        <div class="game-item" data-name="reverie" data-popularity="4000" data-rating="7.0" data-category="Aventura" data-genre="RPG">
+            <img src="../img/reverie.jpg" alt="Capa reverie">
+            <div class="game-info">
+                <h3>Reverie Knights Tactics</h3>
+                <p>Avaliação: 7.0</p>
+                <p>Categoria: Aventura</p>
+                <p>Gênero: RPG </p>
+                <p>Compras: 4000</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../java/loja.js"></script> 
+</body>
+</html>

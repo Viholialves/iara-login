@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte ao Cliente</title>
+    <link rel="icon" type="image/png" href="../img/icone.png">
+    <link rel="stylesheet" href="../css/suporte.css">
+</head>
+<body>
+    <header class="header">
+    
+<button class="back-button" onclick="goBack()">Voltar</button>
+
+        <h1>Suporte ao Cliente</h1>
+    </header>
+
+    <div class="container">
+        <div class="contact">
+            <h2>Contato</h2>
+            <p>Email: suporte@empresa.com</p>
+            <p>Telefone: (11) 99999-9999</p>
+            <p>Horário de Atendimento: Seg - Sex, 08h - 18h</p>
+        </div>
+
+        <div class="tickets">
+            <h2>Tickets Abertos</h2>
+            <div class="tickets-search">
+                <input type="text" id="searchTicket" placeholder="Buscar ticket por título...">
+                <button onclick="searchTickets()">Buscar</button>
+            </div>
+            <ul class="tickets-list" id="ticketsList">
+                <!-- Tickets serão gerados aqui pelo JavaScript -->
+            </ul>
+
+            <div class="new-ticket-form">
+                <h3>Abrir Novo Chamado</h3>
+                <input type="text" id="newTicketTitle" placeholder="Título do Chamado">
+                <textarea id="newTicketDescription" rows="4" placeholder="Descrição do Chamado"></textarea>
+                <button onclick="openNewTicket()">Abrir Chamado</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../java/suporte.js"></script>
+</body>
+</html>

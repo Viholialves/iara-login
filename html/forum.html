@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum - Iara Games</title>
+    <link rel="icon" type="image/png" href="../img/icone.png">
+    <link rel="stylesheet" href="../css/forum.css"> 
+</head>
+<body>
+
+    <button class="voltar" onclick="goBack()">Voltar</button> 
+
+    <div class="container">
+        <h1>Fórum da Iara Games</h1>
+        <p>Participe das discussões, compartilhe suas experiências e interaja com outros jogadores!</p>
+
+        <div class="actions">
+            <button class="button" onclick="sortByDate()">Ordenar por Data</button>
+            <button class="button" onclick="sortByComments()">Mais Comentados</button>
+            <button class="button" onclick="sortByPostOrder()">Ordem de Postagem</button>
+        </div>
+        <!-- Lista de Postagens -->
+        <ul class="post-list">
+            <li class="post-item" data-date="2024-09-12" data-comments="10" data-order="1">
+                <strong>Melhores jogos</strong> - Data: 12/09/2024 - Comentários: 10
+            </li>
+            <li class="post-item" data-date="2024-08-15" data-comments="5" data-order="4">
+                <strong>Jogo de ação mais procurado</strong> - Data: 15/08/2024 - Comentários: 5
+            </li>
+            <li class="post-item" data-date="2024-07-10" data-comments="15" data-order="3">
+                <strong>Erros comuns</strong> - Data: 10/07/2024 - Comentários: 15
+            </li>
+            <li class="post-item" data-date="2024-09-20" data-comments="25" data-order="2">
+                <strong>Hazel Sky</strong> - Data: 20/09/2024 - Comentários: 25
+            </li>
+        </ul>
+        
+        <!-- Formulário para adicionar comentários -->
+        <div class="comment-form">
+            <h2>Deixe seu Comentário</h2>
+            <textarea id="commentInput" placeholder="Escreva seu comentário aqui..."></textarea>
+            <button class="button" onclick="addComment()">Enviar Comentário</button>
+        </div>
+
+    </div>
+
+    <script src="../java/forum.js"></script> 
+</body>
+</html>

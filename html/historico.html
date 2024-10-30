@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Compras - Iara Games</title>
+    <link rel="icon" type="image/png" href="../img/icone.png">
+    <link rel="stylesheet" href="../css/historico.css"> 
+</head>
+<body>
+
+    <button class="voltar" onclick="goBack()">Voltar</button> 
+
+    <div class="container">
+        <h1>Histórico de Compras</h1>
+        <p>Aqui você pode visualizar o histórico de todas as suas compras na Iara Games.</p>
+
+        <!-- Tabela de Histórico de Compras -->
+        <table class="purchase-history">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Jogo</th>
+                    <th>Valor</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                <tr>
+                    <td>12/09/2024</td>
+                    <td>Game X</td>
+                    <td>R$ 59,90</td>
+                    <td>Concluído</td>
+                    <td><button class="button" onclick="viewDetails()">Ver Detalhes</button></td>
+                </tr>
+                <tr>
+                    <td>15/08/2024</td>
+                    <td>Game Y</td>
+                    <td>R$ 39,90</td>
+                    <td>Concluído</td>
+                    <td><button class="button" onclick="viewDetails()">Ver Detalhes</button></td>
+                </tr>
+                <tr>
+                    <td>10/07/2024</td>
+                    <td>Game Z</td>
+                    <td>R$ 89,90</td>
+                    <td>Cancelado</td>
+                    <td><button class="button" onclick="viewDetails()">Ver Detalhes</button></td>
+                </tr>
+              
+            </tbody>
+        </table>
+
+        <p>Se precisar de ajuda com suas compras, entre em contato com o suporte.</p>
+    </div>
+
+    <script src="../java/historico.js"></script>
+</body>
+</html>
