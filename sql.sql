@@ -8,6 +8,7 @@ CREATE TABLE usuarios(
     nome varchar(200) NOT NULL,
     sobrenome VARCHAR(200) NOT NULL,
     cpf varchar(14) NOT NULL,
+    telefone VARCHAR(30) NOT NULL,
     email VARCHAR(200) NOT NULL,
     senha VARCHAR(200) NOT NULL,
     PRIMARY KEY (id)

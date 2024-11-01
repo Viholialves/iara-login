@@ -86,11 +86,11 @@
             </div>
             <div class="form-group">
                 <label for="cpf">CPF</label>
-                <input type="text" class="form-control" name="cpf" id="cpf" placeholder="Digite seu CPF" required>
+                <input type="text" class="form-control" maxlength="14" name="cpf" id="cpf" placeholder="Digite seu CPF" required>
             </div>
             <div class="form-group">
                 <label for="telefone">Telefone</label>
-                <input type="text" class="form-control" name="tel" id="tel" placeholder="Digite seu telefone" required>
+                <input type="text" class="form-control" maxlength="15" name="tel" id="tel" placeholder="Digite seu telefone" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
